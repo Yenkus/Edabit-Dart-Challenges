@@ -2,58 +2,6 @@ import 'package:challenge_one/challenge_one.dart' as challenge_one;
 import 'dart:io';
 
 void main(List<String> arguments) {
-  // print('Hello world: ${challenge_one.calculate()}!');
-
-  // Matchstick Houses #easy
-  print('Enter your number');
-  // Trying to read in input values
-  // int? step = int.parse(stdin.readLineSync()!);
-
-  // print(step);
-
-  void matchHouses(int step) {
-    if (step > 0) {
-      int matchSticks = (step * 5) + 1;
-      // (step - 1)~/5;
-      print('matchstick: $matchSticks');
-    } else if (step == 0) {
-      print('0 match sticks');
-    }
-  }
-
-  matchHouses(87);
-
-  // Tile Teamwork Tactics #medium
-  bool possibleBonus(int myNum, int friendNum) {
-    if (myNum > 0 && friendNum > 0) {
-      for (int i = 1; i <= 6; i++) {
-        if ((myNum + i) == friendNum) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
-  print(possibleBonus(3, 7));
-
-  // Function Factory
-  Function makePlusFunction(int baseNumber) {
-    return (int newInt) {
-      return baseNumber + newInt;
-    };
-  }
-
-  Function plusFive = makePlusFunction(5);
-
-  print('plus five function: ${plusFive(-8)}');
-
-  Function plusTen = makePlusFunction(10);
-
-  print('Plus ten function: ${plusTen(0)}');
-
-  print('Plus ten inside plus five function: ${plusFive(plusTen(0))}');
-
   // Bubble sort
 
   List list = [1, 8, 4, 6, 0, 3, 5, 2, 7, 9];
