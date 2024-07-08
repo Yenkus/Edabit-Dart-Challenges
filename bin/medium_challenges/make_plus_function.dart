@@ -15,4 +15,5 @@ void main(List<String> arguments) {
   print('Plus ten function: ${plusTen(0)}');
 
   print('Plus ten inside plus five function: ${plusFive(plusTen(0))}');
+  // print('plus ten and five ${}')
 }

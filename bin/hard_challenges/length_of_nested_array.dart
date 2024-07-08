@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:test/test.dart';
 
-void main(List<String> arguments) {
+void main() {
   // Length of a Nested Array
   int getLength(List list) {
     int itemCounter = 0;
